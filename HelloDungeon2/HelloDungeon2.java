@@ -2,7 +2,7 @@ import java.util.*
 public class HelloDungeon2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+	System.out.println("HelloDungeon2");
 		
 		
 		
@@ -11,6 +11,8 @@ public class HelloDungeon2 {
 		
 		
 		
+	
+	
 	
 	}
 }
