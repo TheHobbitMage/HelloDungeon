@@ -27,7 +27,6 @@ double rda;
 		double enemystat[] = new double[3];
 		double enemybasestat[] = new double[3];
 		//array update
-		//REMEMBER TO REFER TO THE CALCULATOR
 		System.out.println("Come hero, A dungeon awaits!");
 		System.out.println("What is your name, young hero?");
         String hero = name.nextLine();
