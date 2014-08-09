@@ -3,7 +3,7 @@ public class HelloDungeon2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	System.out.println("HelloDungeon2");
-	System.out.println("By Andrew Park");
+	System.out.println("By Andrew Park & TheHobbitMage");
 	try {
 		  Thread.sleep(1000L);    // one second
 		}
