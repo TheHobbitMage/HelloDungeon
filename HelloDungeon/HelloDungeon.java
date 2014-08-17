@@ -339,9 +339,8 @@ do{//2 start
         		case 1:
         			if (gold >= 100){
         				if (dkey == 0){
-            			System.out.println("You have unlocked the Dragon's Lair");	
-            			basestat[2] = basestat[2] + 100;
-            			gold = gold - 100;
+            			System.out.println("You have unlocked the Dragon's Lair");
+            			gold = gold - 1000;
             			dkey = 1;
         				}
         				else{
