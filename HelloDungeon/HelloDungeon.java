@@ -351,9 +351,7 @@ do{//2 start
             			if (dkey == 0){
             			System.out.println("You do not have enough gold to unlock the Dragon's Lair");
             		}
-            			else{
-            				System.out.println("You already unlocked the Dragon's Lair");
-            			}
+            			
             		}
         			break;
         		case 2:
