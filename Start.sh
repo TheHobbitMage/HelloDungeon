@@ -1,9 +1,9 @@
 cd "$(dirname "$0")"
-Echo HelloDungeon Starting Client
-Echo Launch which game?
-Echo 1) HelloDungeon
-Echo 2) HelloDungeon2
-Echo -n Option: 
+echo HelloDungeon Starting Client
+echo Launch which game?
+echo 1) HelloDungeon
+echo 2) HelloDungeon2
+echo -n Option: 
 read option
 if [ $option = 1 ]
 then
