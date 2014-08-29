@@ -337,7 +337,7 @@ do{//2 start
         		dk = input.nextInt();
         		switch(dk){
         		case 1:
-        			if (gold >= 100){
+        			if (gold >= 1000){
         				if (dkey == 0){
             			System.out.println("You have unlocked the Dragon's Lair");
             			gold = gold - 1000;
