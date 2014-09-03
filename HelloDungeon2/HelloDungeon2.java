@@ -1,5 +1,6 @@
 //System.out.println("");
 import java.util.*;
+import java.lang.*
 public class HelloDungeon2 {
 	public static void main(String[] args) {
 float loop = 0;
@@ -47,7 +48,7 @@ System.out.println("Enter User-Data Code");
 System.out.println("[ 1 ]-[ 2 ]-[ 3 ]-[ 4 ]-[ 5 ]-[ 6 ]-[ 7 ]");//[base1]-[base2]-[base3]-[gold]-[elixer]-[level]-[exp]
 System.out.println("Input [1]");
 load = input.nextFloat();
-temp = sqrt(load);
+temp = Math.sqrt(load);
 basestat[0] = temp;
 System.out.println("Input [2]");
 load = input.nextFloat();
