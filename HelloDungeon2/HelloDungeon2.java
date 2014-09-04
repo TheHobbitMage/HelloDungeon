@@ -49,6 +49,7 @@ System.out.println("Enter User-Data Code");
 System.out.println("[ 1 ]-[ 2 ]-[ 3 ]-[ 4 ]-[ 5 ]-[ 6 ]-[ 7 ]-[ 8 ]");//[base1]-[base2]-[base3]-[gold]-[elixer]-[level]-[exp]
 System.out.println("Input [1]");
 random = input.nextFloat();
+random = Math.sqrt(random);
 System.out.println("Input [2]");
 load = input.nextFloat();
 temp = Math.sqrt(load - random);
