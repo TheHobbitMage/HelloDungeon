@@ -65,7 +65,7 @@ try {
 System.out.println("Input [ 2 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-basestat[0] = temp;
+basestat[0] = temp - random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -73,7 +73,7 @@ try {
 System.out.println("Input [ 3 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-basestat[1] = temp;
+basestat[1] = temp - random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -81,15 +81,15 @@ try {
 System.out.println("Input [ 4 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-basestat[2] = temp;
+basestat[2] = temp - random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
 	catch (Exception e) {}
 System.out.println("Input [ 5 ]");
-load = input.nextLong();
+load = (load) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-gold = temp;
+gold = temp -random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -97,7 +97,7 @@ try {
 System.out.println("Input [ 6 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-elixer = temp;
+elixer = temp - random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -105,7 +105,7 @@ try {
 System.out.println("Input [ 7 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-level = temp;
+level = temp - random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -113,7 +113,7 @@ try {
 System.out.println("Input [ 8 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-exp = temp;
+exp = temp - random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
