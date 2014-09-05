@@ -7,5 +7,5 @@ Releases
 =============
 
 HelloDungeon #1 is finished
-HelloDungeon #2 eta is a few months
-HelloDungeon #3 eta is end of school
+HelloDungeon #2 eta a few months
+HelloDungeon #3 eta end of school
