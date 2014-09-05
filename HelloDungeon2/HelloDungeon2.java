@@ -1,6 +1,6 @@
 //System.out.println("");
 import java.util.*;
-import java.lang.*
+import java.lang.*;
 public class HelloDungeon2 {
 	public static void main(String[] args) {
 float loop = 0;
@@ -49,34 +49,34 @@ System.out.println("Enter User-Data Code");
 System.out.println("[ 1 ]-[ 2 ]-[ 3 ]-[ 4 ]-[ 5 ]-[ 6 ]-[ 7 ]-[ 8 ]");//[base1]-[base2]-[base3]-[gold]-[elixer]-[level]-[exp]
 System.out.println("Input [ 1 ]");
 random = input.nextFloat();
-random = Math.sqrt(random);
+random = (float) Math.sqrt(random - 9);
 System.out.println("Input [ 2 ]");
 load = input.nextFloat();
-temp = Math.sqrt(load - random);
+temp = (float) Math.sqrt(load - random);
 basestat[0] = temp;
 System.out.println("Input [ 3 ]");
 load = input.nextFloat();
-temp = Math.sqrt(load - random);
+temp = (float) Math.sqrt(load - random);
 basestat[1] = load;
 System.out.println("Input [ 4 ]");
 load = input.nextFloat();
-temp = Math.sqrt(load - random);
+temp = (float) Math.sqrt(load - random);
 basestat[2] = load;
 System.out.println("Input [ 5 ]");
 load = input.nextFloat();
-temp = Math.sqrt(load - random);
+temp = (float) Math.sqrt(load - random);
 gold = load;
 System.out.println("Input [ 6 ]");
 load = input.nextFloat();
-temp = Math.sqrt(load - random);
+temp = (float) Math.sqrt(load - random);
 elixer = load;
 System.out.println("Input [ 7 ]");
 load = input.nextFloat();
-temp = Math.sqrt(load - random);
+temp = (float) Math.sqrt(load - random);
 level = load;
 System.out.println("Input [ 8 ]");
 load = input.nextFloat();
-temp = Math.sqrt(load - random);
+temp = (float) Math.sqrt(load - random);
 exp = load;
 menuloop = 1;
 break;
