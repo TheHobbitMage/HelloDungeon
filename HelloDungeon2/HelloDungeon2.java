@@ -21,10 +21,10 @@ float elixer = 0;
 float level = 0;
 float exp = 0;
 float menuloop = 0;
-while (menuloop == 0){//flag4
 System.out.println("What is your name?");
 Scanner name = new Scanner(System.in);
 String hero = name.nextLine();	
+while (menuloop == 0){//flag4
 System.out.println("1: New Game");
 System.out.println("2: Load Game");
 Scanner input = new Scanner(System.in);
