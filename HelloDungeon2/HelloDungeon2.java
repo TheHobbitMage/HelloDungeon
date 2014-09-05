@@ -57,6 +57,7 @@ try {
 System.out.println("Input [ 1 ]");
 random = (long) input.nextLong();
 random = (long) Math.sqrt(random - 9);
+random = random - 5;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
