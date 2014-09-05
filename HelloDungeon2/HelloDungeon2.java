@@ -114,13 +114,6 @@ try {
 			basestat[2] = 40;
 			fighter = 7;
 		break;
-		case 330:
-			System.out.println("You chose Titan Shifter as your class\n(AOT Reference)");
-			basestat[0] = 10;
-			basestat[1] = 200;
-			basestat[2] = 100;
-			fighter = 8 ;
-		break;
 		default:
 			System.out.println("That is not an option");
 		break;
