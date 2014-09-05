@@ -89,7 +89,7 @@ try {
 System.out.println("Input [ 5 ]");
 load = (load) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-gold = temp -random;
+gold = temp - random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
