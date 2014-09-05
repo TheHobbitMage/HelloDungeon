@@ -4,7 +4,6 @@ import java.lang.*;
 public class HelloDungeon2 {
 	public static void main(String[] args) {
 float loop = 0;
-		// TODO Auto-generated method stub
 	System.out.println("HelloDungeon2");
 	System.out.println("By Andrew Park");
 	try {
@@ -13,8 +12,9 @@ float loop = 0;
 		catch (Exception e) {}
 while(loop == 0){//flag2
 int menuoption;
-float stat[] = new float[3];//1:health 2:strength 3:magic
+float stat[] = new float[3];//1:magic 2:health 3:attack
 float basestat[] = new float[3];
+int fighterc = 0;
 float fighter = 0;
 float gold = 0;
 float elixer = 0;
@@ -38,18 +38,102 @@ try {
 		catch (Exception e) {}
 		while(fighter == 0){//flag1
 		System.out.println("Okay, " + hero + ", what class do you pick?");
+		try {
+			Thread.sleep(1000L);
+		} catch (Exception e) {}
+		System.out.println("[1] Sorceror");
+		System.out.println("High magic and decent health");
+		try {Thread.sleep(2000L);}catch (Exception e) {}
+		System.out.println("[2] Wizard");
+		System.out.println("Very high magic");
+		try {Thread.sleep(2000L);}catch (Exception e) {}
+		System.out.println("[3] Necromancer");
+		System.out.println("Jack of all trades");
+		try {Thread.sleep(2000L);}catch (Exception e) {}
+		System.out.println("[4] Warrior");
+		System.out.println("High attack and decent health");
+		try {Thread.sleep(2000L);}catch (Exception e) {}
+		System.out.println("[5] Archer");
+		System.out.println("High health and decent attack");
+		try {Thread.sleep(2000L);}catch (Exception e) {}
+		System.out.println("[6] Barbarian");
+		System.out.println("Very high attack");
+		try {Thread.sleep(2000L);}catch (Exception e) {}
+		System.out.println("[7] Knight");
+		System.out.println("Very high health");
+		try {Thread.sleep(1000L);}catch (Exception e) {}
+		System.out.println("Choice: ");
+		fighterc = input.nextInt();
+		switch(fighterc){
+		case 1:
+			System.out.println("You chose Sorceror as your class");
+			basestat[0] = 30;
+			basestat[1] = 20;
+			basestat[2] = 10;
+			fighter = 1;
+		break;
+		case 2:
+			System.out.println("You chose Wizard as your class");
+			basestat[0] = 40;
+			basestat[1] = 10;
+			basestat[2] = 10;
+			fighter = 2;
+		break;
+		case 3:
+			System.out.println("You chose Necromancer as your class");
+			basestat[0] = 20;
+			basestat[1] = 20;
+			basestat[2] = 20;
+			fighter = 3;
+		break;
+		case 4:
+			System.out.println("You chose Warrior as your class");
+			basestat[0] = 10;
+			basestat[1] = 30;
+			basestat[2] = 20;
+			fighter = 4;
+		break;
+		case 5:
+			System.out.println("You chose Archer as your class");
+			basestat[0] = 10;
+			basestat[1] = 20;
+			basestat[2] = 30;
+			fighter = 5;
+			break;
+		case 6:
+			System.out.println("You chose Barbarian as your class");
+			basestat[0] = 10;
+			basestat[1] = 40;
+			basestat[2] = 10;
+			fighter = 6;
+			break;
+		case 7:
+			System.out.println("You chose Knight as your class");
+			basestat[0] = 10;
+			basestat[1] = 10;
+			basestat[2] = 40;
+			fighter = 7;
+		break;
+		case 330:
+			System.out.println("You chose Titan Shifter as your class\n(AOT Reference)");
+			basestat[0] = 10;
+			basestat[1] = 200;
+			basestat[2] = 100;
+			fighter = 8 ;
+		break;
+		default:
+			System.out.println("That is not an option");
+		break;
+		}
 		}//flag1
 break;		
 case 2:		
 long load;
 long random;
 long temp;
-try {
-	  Thread.sleep(1000L);    // one second
-	}
-	catch (Exception e) {}
+try {Thread.sleep(1000L);}catch (Exception e) {}
 System.out.println("Enter User-Data Code");
-System.out.println("[ 1 ]-[ 2 ]-[ 3 ]-[ 4 ]-[ 5 ]-[ 6 ]-[ 7 ]-[ 8 ]");//[base1]-[base2]-[base3]-[gold]-[elixer]-[level]-[exp]
+System.out.println("[ 1 ]-[ 2 ]-[ 3 ]-[ 4 ]-[ 5 ]-[ 6 ]-[ 7 ]-[ 8 ]-[ 9 ]");//[base1]-[base2]-[base3]-[gold]-[elixer]-[level]-[exp]-[fighter]
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -57,7 +141,7 @@ try {
 System.out.println("Input [ 1 ]");
 random = (long) input.nextLong();
 random = (long) Math.sqrt(random - 9);
-random = random - 5;
+random = random / 2;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -65,7 +149,7 @@ try {
 System.out.println("Input [ 2 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-basestat[0] = temp - random;
+basestat[0] = temp / random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -73,7 +157,7 @@ try {
 System.out.println("Input [ 3 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-basestat[1] = temp - random;
+basestat[1] = temp / random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -81,15 +165,15 @@ try {
 System.out.println("Input [ 4 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-basestat[2] = temp - random;
+basestat[2] = temp / random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
 	catch (Exception e) {}
 System.out.println("Input [ 5 ]");
-load = (load) input.nextLong();
+load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-gold = temp - random;
+gold = temp / random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -97,7 +181,7 @@ try {
 System.out.println("Input [ 6 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-elixer = temp - random;
+elixer = temp / random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -105,7 +189,7 @@ try {
 System.out.println("Input [ 7 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-level = temp - random;
+level = temp / random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -113,7 +197,15 @@ try {
 System.out.println("Input [ 8 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-exp = temp - random;
+exp = temp / random;
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
+System.out.println("Input [ 9 ]");
+load = (long) input.nextLong();
+temp = (long) Math.sqrt(load - random);
+fighter = temp / random;
 try {
 	  Thread.sleep(1000L);    // one second
 	}
@@ -126,7 +218,7 @@ break;
 }//flag3
 }//flag4
 //actual game
-
+// TODO add store and dungeon and option and my account
 
 }//flag2
 }
