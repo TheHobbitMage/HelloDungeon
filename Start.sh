@@ -7,8 +7,8 @@ echo -n "Option: "
 read option
 if [ $option = 1 ]
 then
-	//run code
+	//path to class
 elif [ $option = 2 ]
 then
-	//run code
+	//path to class
 fi
