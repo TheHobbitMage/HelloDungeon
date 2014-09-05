@@ -22,6 +22,9 @@ float level = 0;
 float exp = 0;
 float menuloop = 0;
 while (menuloop == 0){//flag4
+System.out.println("What is your name?");
+Scanner name = new Scanner(System.in);
+String hero = name.nextLine();	
 System.out.println("1: New Game");
 System.out.println("2: Load Game");
 Scanner input = new Scanner(System.in);
@@ -33,51 +36,86 @@ try {
 		  Thread.sleep(1000L);    // one second
 		}
 		catch (Exception e) {}
-Scanner name = new Scanner(System.in);
-	System.out.println("\n\n\n\n\n\n\n\nWhat is your name?");
-String hero = name.nextLine();
 		while(fighter == 0){//flag1
 		System.out.println("Okay, " + hero + ", what class do you pick?");
-
 		}//flag1
 break;		
 case 2:		
 long load;
 long random;
 long temp;
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Enter User-Data Code");
 System.out.println("[ 1 ]-[ 2 ]-[ 3 ]-[ 4 ]-[ 5 ]-[ 6 ]-[ 7 ]-[ 8 ]");//[base1]-[base2]-[base3]-[gold]-[elixer]-[level]-[exp]
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Input [ 1 ]");
 random = (long) input.nextLong();
 random = (long) Math.sqrt(random - 9);
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Input [ 2 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
 basestat[0] = temp;
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Input [ 3 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
 basestat[1] = load;
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Input [ 4 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
 basestat[2] = load;
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Input [ 5 ]");
 load = input.nextLong();
 temp = (long) Math.sqrt(load - random);
 gold = load;
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Input [ 6 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
 elixer = load;
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Input [ 7 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
-level = load;
+level = load;try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 System.out.println("Input [ 8 ]");
 load = (long) input.nextLong();
 temp = (long) Math.sqrt(load - random);
 exp = load;
+try {
+	  Thread.sleep(1000L);    // one second
+	}
+	catch (Exception e) {}
 menuloop = 1;
 break;
 default:
