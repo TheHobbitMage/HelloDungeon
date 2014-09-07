@@ -15,6 +15,7 @@ int menuoption;
 float stat[] = new float[3];//1:magic 2:health 3:attack
 float basestat[] = new float[3];
 int fighterc = 0;
+float game = 0;
 float fighter = 0;
 float gold = 0;
 float elixer = 0;
@@ -212,7 +213,12 @@ break;
 }//flag4
 //actual game
 // TODO add store and dungeon and option and my account
+while(game == 0;){//float game
+System.out.println("");
 
+
+
+}//flag game
 }//flag2
 }
 }
