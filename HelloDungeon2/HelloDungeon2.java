@@ -213,7 +213,7 @@ break;
 }//flag4
 //actual game
 // TODO add store and dungeon and option and my account
-while(game == 0;){//float game
+while(game == 0){//float game
 System.out.println("");
 
 
@@ -221,4 +221,4 @@ System.out.println("");
 }//flag game
 }//flag2
 }
-}
+
